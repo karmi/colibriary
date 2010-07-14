@@ -10,5 +10,6 @@ group :test do
   gem 'rspec-rails', "~>2.0.0.beta.17"
   gem 'cucumber', "~>0.8.5"
   gem 'cucumber-rails', "~>0.3.2"
-  gem 'webrat'
+  gem 'capybara', "~>0.3.9"
+  gem 'launchy'
 end
