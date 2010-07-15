@@ -1,0 +1,95 @@
+body {
+  padding: 6em;
+  background-color: #fff;
+}
+
+h2 {
+  color: #444;
+}
+
+.highlight {
+  font-size: normal;
+  background-color: #FEF28E;
+  padding: 0.25em 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+
+a:hover {background-color:transparent;}
+
+table {
+  border-top: 2px solid #c3c3c3;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  color: #333;
+  background-color: #c3c3c3;
+  padding: 0.5em;
+  text-align: left;
+}
+
+td {
+  padding: 1em 0.5em;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+
+a.button {
+  margin: 0;
+}
+
+label {
+  display: block;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+.field_with_errors label {
+  color: #fff;
+  background-color: #c00;
+  display: inline;
+  padding: 0.5em;
+}
+
+.field_with_errors input {
+  border: 2px solid #c00;
+  margin: 0;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid #c00;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
