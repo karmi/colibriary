@@ -8,6 +8,7 @@
     <th></th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
 
 <% @books.each do |book| %>
@@ -15,6 +16,11 @@
     <td><%= book.author %></td>
     <td><%= book.title %></td>
     <td><%= book.borrowable? %></td>
+    <td>
+      <%= form_tag('#') do -%>
+        <%= text_field_tag dom_id(book, :borrower_card_id_for) %>
+      <%- end -%>
+    </td>
     <td><%= link_to 'Show', book %></td>
     <td><%= link_to 'Edit', edit_book_path(book) %></td>
     <td><%= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete %></td>
