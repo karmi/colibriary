@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= link_to "Books", books_path %></h1>
+<hr>
+
+<%- div_for @book do -%>
+  <p>ID:          <%= @book.id %></p>
+  <p>Author:      <%= @book.author %></p>
+  <p>Title:       <%= @book.title %></p>
+  <p>Borrowable:  <%= @book.borrowable? %></p>
+<%- end -%>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
