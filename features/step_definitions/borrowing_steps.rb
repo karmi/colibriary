@@ -6,3 +6,7 @@ Pokud /^existuje neprezenční výtisk knihy "([^"]*)"$/ do |book|
   author, title = book.split(':')
   Book.create :author => author.strip, :title => title.strip, :borrowable => true
 end
+
+Pokud /^jsem na stránce "Knihy"$/ do
+  visit books_path
+end
