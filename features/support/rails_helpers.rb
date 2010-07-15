@@ -1,0 +1,1 @@
+World(ActionView::Helpers::RecordIdentificationHelper)
