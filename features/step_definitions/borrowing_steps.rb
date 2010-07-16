@@ -26,3 +26,10 @@ Když /^kliknu na tlačítko "([^"]*)" u knihy "([^"]*)"$/ do |button_name, book
     click_button button_name
   end
 end
+
+Pak /^je kniha "([^"]*)" označena jako vypůjčená$/ do |book_name|
+  author, title = author_and_title_from_book_name(book_name)
+  book   = Book.find_by_author_and_title(author, title)
+  box_for_book_id = '#' + dom_id(book, :box_for)     #box_for_book_1
+  Pak %{bych měl vidět "vypůjčena" uvnitř prvku "#{box_for_book_id}"}
+end
