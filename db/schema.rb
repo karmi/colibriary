@@ -9,15 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100716093111) do
+ActiveRecord::Schema.define(:version => 20100716124550) do
 
   create_table "books", :force => true do |t|
     t.string   "author"
     t.string   "title"
-    t.boolean  "borrowable",  :default => true
+    t.boolean  "borrowable",    :default => true
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "borrowed_to"
+    t.date     "borrowed_from"
   end
 
   create_table "readers", :force => true do |t|
