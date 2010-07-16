@@ -33,3 +33,10 @@ Pak /^je kniha "([^"]*)" označena jako vypůjčená$/ do |book_name|
   box_for_book_id = '#' + dom_id(book, :box_for)     #box_for_book_1
   Pak %{bych měl vidět "vypůjčena" uvnitř prvku "#{box_for_book_id}"}
 end
+
+Pak /^datum výpůjčky knihy "([^"]*)" je dnes$/ do |book_name|
+  author, title = author_and_title_from_book_name(book_name)
+  book   = Book.find_by_author_and_title(author, title)
+  box_for_book_id = '#' + dom_id(book, :box_for)     #box_for_book_1
+  Pak %{bych měl vidět "#{Time.now.to_date.to_s(:format => 'short')}" uvnitř prvku "#{box_for_book_id}"}
+end
