@@ -17,4 +17,24 @@ describe Book do
     @book.should be_borrowable
   end
 
+  describe "as borrowable" do
+
+    before(:each) do
+      @book   = Book.create :author => 'Test', :title => 'Test'
+      @reader = Reader.create :name => 'Test'
+    end
+
+    it "is borrowed when it has a reader" do
+      @book.update_attribute(:borrowed_to, @reader.id)
+      @book.should respond_to(:reader)
+      @book.reader.should == @reader
+      @book.should be_borrowed
+    end
+
+    it "is not borrowed when does not have a reader" do
+      @book.should respond_to(:reader)
+      @book.should_not be_borrowed
+    end
+  end
+
 end
