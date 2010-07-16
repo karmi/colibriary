@@ -1,4 +1,18 @@
 class BooksController < ApplicationController
+
+  # Mark the book as borrowed and return to index
+  #
+  def borrow
+   @book   = Book.find params[:id]
+   @reader = Reader.find_by_card_id params[:borrower_card_id]
+   raise ActiveRecord::RecordNotFound unless @reader
+   @book.update_attributes :borrowed_to => @reader.id 
+   respond_to do |format|
+     format.html { redirect_to(books_url) }
+     format.xml  { head :ok }
+   end
+  end
+
   # GET /books
   # GET /books.xml
   def index

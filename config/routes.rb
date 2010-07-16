@@ -1,6 +1,10 @@
 Colibriary::Application.routes.draw do |map|
 
-  resources :books
+  resources :books do
+    member do
+      post :borrow
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

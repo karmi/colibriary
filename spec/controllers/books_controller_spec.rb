@@ -6,6 +6,27 @@ describe BooksController do
     @mock_book ||= mock_model(Book, stubs).as_null_object
   end
 
+  describe "POST borrow" do
+
+    before(:each) do
+      @reader = Reader.create! :name => 'Tester', :card_id => '123'
+    end
+
+    it "makes the book borrowed" do
+      Book.should_receive(:find).with("37") { mock_book }
+      mock_book.should_receive(:update_attributes).with( { :borrowed_to => @reader.id } )
+      post :borrow, :id => "37", :borrower_card_id => @reader.card_id
+      assigns(:book).should be_borrowed
+    end
+
+    it "raises error when passed invalid card id" do
+      Book.should_receive(:find).with("37") { mock_book }
+      lambda { 
+        post :borrow, :id => "37", :borrower_card_id => 'krupice'
+      }.should raise_error
+    end
+  end
+
   describe "GET index" do
     it "assigns all books as @books" do
       Book.stub(:all) { [mock_book] }

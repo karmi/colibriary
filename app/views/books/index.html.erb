@@ -9,7 +9,6 @@
     <div class="info">
       <strong><%= book.author %></strong>:
       <em><%= book.title %></em>
-      <small>(Lze půjčit? <strong><%= book.borrowable? ? 'ANO' : 'NE' %></strong>)</small>
     </div>
 
     <div class="actions">
@@ -19,10 +18,20 @@
     </div>
 
     <%- if book.borrowable? -%>
-      <%= form_tag('#') do -%>
-        <%= text_field_tag 'reader[card_id]', '', :id => dom_id(book, :borrower_card_id_for) %>
-        <%= submit_tag 'Půjčit' %>
+
+      <%- unless book.borrowed? -%>
+
+        <%= form_tag(borrow_book_path(book)) do -%>
+          <%= text_field_tag 'borrower_card_id', '', :id => dom_id(book, :borrower_card_id_for) %>
+          <%= submit_tag 'Půjčit' %>
+        <%- end -%>
+
+      <%- else -%>
+        <p>Tato je kniha je vypůjčena čtenáři/ce: <em><%= book.reader.name %></em></p>
       <%- end -%>
+
+    <%- else -%>
+        <p>Tuto knihu nelze zapůjčit</p>
     <%- end -%>
     
   <%- end -%>
