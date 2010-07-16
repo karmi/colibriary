@@ -27,7 +27,7 @@
         <%- end -%>
 
       <%- else -%>
-        <p>Tato je kniha je vypůjčena čtenáři/ce: <em><%= book.reader.name %></em></p>
+        <p>Tato je kniha je vypůjčena čtenáři/ce <em><%= book.reader.name %></em> od <%= book.borrowed_from.to_date.to_s(:format => 'short') %></p>
       <%- end -%>
 
     <%- else -%>
