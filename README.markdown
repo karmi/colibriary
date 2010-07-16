@@ -91,6 +91,8 @@ _Cucumber_ prosazuje vývoj tzv. „zvnějšku dovnitř“, kdy nejprve definuje
 
 Logika aplikace je pokryta testy ve formátu _RSpec_, její webové rozhraní pomocí scénáře pro _Cucumber_.
 
+Více si můžete přečíst v [doprovodném článku](http://github.com/karmi/colibriary/blob/master/doc/text/Agilni-metodiky-a-problem-zadani.Karel-Minarik.Informacni-systemy.markdown).
+
 ---
 
 (c) [Karel Minařík](http://karmi.cz), MIT License
