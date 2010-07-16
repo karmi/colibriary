@@ -24,8 +24,12 @@ describe Book do
       @reader = Reader.create :name => 'Test'
     end
 
+    it "could be borrowed" do
+      @book.should respond_to(:borrow_to)
+    end
+
     it "is borrowed when it has a reader" do
-      @book.update_attribute(:borrowed_to, @reader.id)
+      @book.borrow_to @reader.id
       @book.should respond_to(:reader)
       @book.reader.should == @reader
       @book.should be_borrowed
@@ -34,6 +38,13 @@ describe Book do
     it "is not borrowed when does not have a reader" do
       @book.should respond_to(:reader)
       @book.should_not be_borrowed
+    end
+
+    it "records the date when borrowed" do
+      now = Time.local(2010, 01, 01, 12, 00)
+      Time.stub!(:now).and_return now
+      @book.borrow_to @reader.id
+      @book.borrowed_from.to_date.should == now.to_date
     end
   end
 

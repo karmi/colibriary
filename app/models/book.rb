@@ -5,4 +5,10 @@ class Book < ActiveRecord::Base
   def borrowed?
     !reader.nil?
   end
+
+  def borrow_to(reader_id)
+    self.borrowed_to   = reader_id
+    self.borrowed_from = Time.now
+    self.save
+  end
 end
