@@ -54,7 +54,7 @@ _„Tyto fenomény nelze přesně analyzovat“_, se vrací jako ozvěna. Brooks
 
 > Pokud je tomu tak, jak věřím, že pojmové struktury, které dnes vytváříme, jsou příliš složité na to,
 > abychom je byli schopni přesně specifikovat dopředu, a příliš složité na to, abychom je vytvořili bez chyb,
-> pak musíme radiálně změnit přístup.
+> pak musíme radikálně změnit přístup.
 
 Brooks naznačuje: jestliže je tomu skutečně tak, jestliže je _nemožné_ dopředu analyzovat a v úplnosti specifikovat funkce komplexních informačních systémů, aplikací a ostatního software, nebylo by lepší než se snažit tomuto faktu neustále vzdorovat _lepším_ plánováním, _důkladnější_ analýzou a _podrobnější_ dokumentací, jej přijmout a obrátit ve svůj prospěch? Nechat software „růst“, místo toho jej „stavět“ („Grow, not build, software“, Brooks, 1995, s. 200).
 
