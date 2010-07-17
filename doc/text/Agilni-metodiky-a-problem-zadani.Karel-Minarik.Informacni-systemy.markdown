@@ -329,7 +329,7 @@ Vidíme, jak definice požadavku v _Cucumber_ scénáři provádí vývojáře j
 
 Takový postup samozřejmě není možný u všech typů projektů. Existují rozsáhlé projekty v oblasti vojenství či finančnictví, které vyžadují mnohem formalizovanější postupy. Agilní metodiky, které jsme si představili v tomto textu, však získávají čím dál více na popularitě mezi různými typy vývojových týmů i projektů. Otázka zní, čím je tato popularita dána.
 
-Podle výsledků publikovaných oragnizací _Standish Group_ softwarové projekty v roce 2004 průměrně překročily o více než polovinu odhadovaný rozpočet. Může se to zdát drastické, ale jedná se o obrovské zlepšení oproti až _dvojnásobnému_ překračování rozpočtů v devadesátých letech (InfoQ, 2006). Standish Group doprovází svoji zprávu tímto grafem:
+Podle výsledků publikovaných organizací _Standish Group_ softwarové projekty v roce 2004 průměrně překročily o více než polovinu odhadovaný rozpočet. Může se to zdát drastické, ale jedná se o obrovské zlepšení oproti až _dvojnásobnému_ překračování rozpočtů v devadesátých letech (InfoQ, 2006). Standish Group doprovází svoji zprávu tímto grafem:
 
 ![Chaosreport Chart Cost Overrun](/karmi/colibriary/raw/master/doc/text/chaosreport-chart-cost-overrun.png)
 
