@@ -7,7 +7,7 @@ Agilní metodiky vývoje software a problém zadání
 ---
 
 Abstract:
-This text deals with some major shifts in project management methodologies in current software development. During the last couple of years, an increasing abandonment of traditional „waterfall“ and formal approaches to project management has been observed both in literature and day-to-day development. These „agile methodologies“ turn some of long-held principles on it's head and propose radically different approach. The author describes these theoretical and practical differences, while focusing on the problem of requirements documentation, project specification and testing. As a pratical part of this text, a simple web application has been developed to demonstrate one of the recently emerged tools for capturing project specification and acceptance testing: _Cucumber_.
+This text deals with some major shifts in project management methodologies in current software development. During the last couple of years, an increasing abandonment of traditional „waterfall“ and formal approaches to project management has been observed both in literature and day-to-day development. These „agile methodologies“ turn some of long-held principles on its head and propose radically different approach. The author describes these theoretical and practical differences, while focusing on the problem of requirements documentation, project specification and testing. As a pratical part of this text, a simple web application has been developed to demonstrate one of the recently emerged tools for capturing project specification and acceptance testing: _Cucumber_.
 
 ---
 
@@ -43,17 +43,16 @@ Podobné diktum — „to, co má navrhovaný software dělat, nelze přesně an
 > Ta _nejsložitější část při budování informačního systému_ je rozhodnout se, co přesně vlastně vybudovat.
 > Žádná jiná součást celé koncepční práce není tak složitá, jako stanovení detailních technických požadavků (...)
 > Žádná jiná součást natolik neohrozí celý systém, je-li provedena nesprávně.
-> Žádnou jinou součást nelze tak snadno napravit později.
+> Žádnou jinou součást nelze tak obtížně napravit později.
 > Protože pravdou je, že zákazníci nevědí, co vlastně chtějí (...)
 > A šel bych ještě o krok dál, a tvrdil, že je skutečně nemožné, aby zákazník, i když 
-> pracuje se softwarovým inženýrem specifikoval úplně, přesně a správně exaktní požadavky
+> pracuje se softwarovým inženýrem, specifikoval úplně, přesně a správně exaktní požadavky
 > moderního softwarového produktu předtím, než měl možnost vyzkoušet alespoň nějaké
 > verze tohoto produktu, který se snaží specifikovat.
 
 _„Tyto fenomény nelze přesně analyzovat“_, se vrací jako ozvěna. Brooksův esej pokračuje (Brooks, 1995, s. 200):
 
-
-> Pokud je tom, jak věřím, že pojmové struktury, které takto dnes vytváříme, jsou příliš složité na to,
+> Pokud je tomu tak, jak věřím, že pojmové struktury, které dnes vytváříme, jsou příliš složité na to,
 > abychom je byli schopni přesně specifikovat dopředu, a příliš složité na to, abychom je vytvořili bez chyb,
 > pak musíme radiálně změnit přístup.
 
@@ -64,12 +63,12 @@ A právě taková je pozice zastánců agilních metodik: jestliže nelze dopře
 
 ## Manifest agilního vývoje ##
 
-Za zakládající dokument agilního přístupu či metodiky vývoje software můžeme považovat _The Agile Manifesto_, společný dokument, vypracovaný skupinou předních teoretiků a vývojářů (viz Agile Manifesto, Authors), který je ve shodě s agilní filosofií tak stručný, že jej můžeme ocitovat v jeho úplnosti:
+Za zakládající dokument agilního přístupu či metodiky vývoje software můžeme považovat _The Agile Manifesto_, společný dokument, vypracovaný v roce 2001 skupinou předních teoretiků a vývojářů (viz Agile Manifesto, Authors), který je ve shodě s agilní filosofií tak stručný, že jej můžeme ocitovat v jeho úplnosti:
 
 > Manifest agilního vývoje software
 
 > My, níže podepsaní, objevujeme lepší způsoby, jak vyvíjet software
-> tím, že je používáme při práci, a pomáháme ostatním je používat také.
+> tím, že je využíváme v naší práci, a pomáháme ostatním je využívat také.
 > 
 > Díky této práci jsme dospěli k tomu, že:
 >
@@ -81,11 +80,11 @@ Za zakládající dokument agilního přístupu či metodiky vývoje software m�
 > 
 > **Reagování na změny** je cennější než následování plánu
 >
-> Tedy, jakkoliv uznáváme hodnotu toho, co je uvedeno na pravé straně
+> Tedy, jakkoliv uznáváme hodnotu toho, co je uvedeno na pravé straně,
 > ceníme si více toho, co je uvedeno na straně levé.
 
 
-Vidíme z něj jednoznačnou orientaci na pragmatický, empirický přístup („objevujeme lepší způsoby (...) _tím, že je používáme_“; srov. Chelimsky, 2010, s. 97) a nedogmatické pojetí: „jakkoliv uznáváme hodnotu ... ceníme si více“. Čtyři zásady, které postuluje, velmi pregnantně shrnují revoluční změnu v přístupu agilní metodiky k problémům projektového řízení.
+Vidíme z něj jednoznačnou orientaci na pragmatický, empirický přístup („objevujeme lepší způsoby (...) _tím, že je využíváme“; srov. Chelimsky, 2010, s. 97) a nedogmatické pojetí: „jakkoliv uznáváme hodnotu ... ceníme si více“. Čtyři zásady, které postuluje, velmi pregnantně shrnují revoluční změnu v přístupu agilní metodiky k problémům projektového řízení.
 
 #### _Jednotlivci a komunikace jsou cennější než procesy a nástroje_ ####
 
@@ -111,7 +110,7 @@ Díky sebevědomí, plynoucímu z toho, že je tým zpracovávající projekt sc
 
 V tomto bodě působí agilní metodiky zcela proti běžnému chápání projektového řízení. _Změna_ je v jeho pojetí vždy synonymem pro _hrozbu_, znamená zvýšenou ostražitost a větší či menší míru manévrování, jehož cílem je primárně změně _zabránit_. Změna v zadání, specifikaci či architektuře je však u netriviálního softwarového projektu, který trvá nezanedbatelnou dobu, nejen pravděpodobná, ale _jistá_. Agilní metodiky zde převracejí běžné pojetí na hlavu: nelze-li se změně vyhnout, _přijměme_ ji a začleňme ji jako běžnou součást projektu. Koneckonců, bránit změně má svůj dobrý smysl kupříkladu na stavbě, neboť ztuhlý železobeton lze „měnit“ jen za cenu bourání a jakákoliv podobná „změna“ je zpravidla velmi drahá. Software je však ze své podstaty _nehmotný_ a jeho změna nesrovnatelně snazší (srov. Chelimsky et al., 2010, s. 96).
 
-Agilní metodiky se s problémem změny vyrovnávají mnohem lépe než metodiky tradiční zejména díky krátkému vývojovému cyklu: potenciálně destruktivní vliv požadavku na změnu funkcionality je omezen tím, že přichází velmi záhy po její implementaci, nikoliv po několika měsících, kdy je projekt již v úplně jiném stadiu a tým se zabývá jiným okruhem funkcionality. Negativní vliv změny je rovněž limitován tím, že výsledkem každé iterace je _fungující software_, což omezuje prostor pro „frivolní“ změny, které nepřináší hodnotu pro funkci aplikace.
+Agilní metodiky se s problémem změny vyrovnávají mnohem lépe než metodiky tradiční zejména díky krátkému vývojovému cyklu: potenciálně destruktivní vliv požadavku na změnu funkcionality je omezen tím, že přichází velmi záhy po její implementaci, nikoliv po několika měsících, kdy je projekt již v úplně jiném stadiu a tým se zabývá jiným okruhem funkcionality. Negativní vliv změny je rovněž limitován tím, že výsledkem každé iterace je _fungující software_, což omezuje prostor pro „frivolní“ požadavky či změny, které nepřináší hodnotu pro funkci aplikace, a které si zadavatel vymýšlí „do zásoby“.
 
 „Změna“ je z pohledu agilních metodik vítané _upřesnění zadání_ na základě reálné zkušenosti s fungující aplikací. Cílem celého projektu je přece vytvořit _fungující software_, který řeší skutečné, nikoliv imaginární zadání.
 
@@ -124,14 +123,14 @@ Při expozici problémů, s nimiž se vyrovnávají tradiční metodiky, jsme vi
 
 ### _User stories_ ###
 
-Většina agilních metodik (např. dominantní metodika, _Scrum_) přichází se specifickou formou specifikace projektu: tzv. _user stories_ — „příběhy“ o interakci uživatele s aplikací, části systému s jinou, apod. V čem se liší od tradiční formální specifikace zadání softwarového projektu (srov. IEEE 830) či od zavedených forem typu _případů užití_ (srov. Use Case)?
+Většina agilních metodik (např. dominantní metodika, _Scrum_) přichází se specifickou formou specifikace projektu: tzv. _user stories_ — „příběhy“ o interakci uživatele s aplikací, části systému s jinou, apod. V čem se tyto „scénáře“ liší od tradiční formální specifikace zadání softwarového projektu (srov. IEEE 830) či od zavedených forem typu _případů užití_ (srov. Use Case)?
 
-V první řadě tím, že se nesnaží postihnout _celek_ projektu či systému. Záměrně a cílevědomě opouštějí představu, že architekt či analytik je schopen před započetím práce na projektu zjistit požadavky klienta a převést je do formálního zápisu specifikace. Agilní přístup ke specifikaci postupuje podobně, jako řídíme-li automobil v mlze: svoji rychlost musíme přizpůsobit viditelnosti. Jedeme jen tam, kam vidíme.
+V první řadě tím, že se nesnaží postihnout _celek_ projektu či systému. Záměrně a cílevědomě opouštějí představu, že architekt či analytik je schopen před započetím práce na projektu zjistit _v úplnosti_ požadavky klienta a převést je do formálního zápisu specifikace. Agilní přístup ke specifikaci postupuje podobně, jako řídíme-li automobil v mlze: svoji rychlost musíme přizpůsobit viditelnosti. Jedeme jen tam, kam vidíme.
 
 To však není jediný rozdíl. Jak pregnatně shrnuje Mike Cohn v knize _User Stories Applied_:
 
-> Jakmile uživatelé uvidí software, který je pro ně vytvářen, nastane **mocná a důležitá zpětná vazba**.
-> Jakmile jej uvidí, začnou přicházet s novými nápady a uvědomovovat si, co by chtěli změnit na nápadech starých.
+> Jakmile uživatelé spatří software, který je pro ně vytvářen, nastane **efektivní a důležitá zpětná vazba**:
+> začnou přicházet s novými nápady a uvědomovovat si, co by chtěli změnit na nápadech starých.
 > Když uživatel požaduje změnu systému, tak jak byl popsán ve specifikaci, zvykli jsme si nazývat to „změnou
 > funkcionality“.
 > Takové myšlení je nesprávné, a to ze dvou důvodů. Zaprvé, takový přístup se tváří, že v určitém momentu byla tato
@@ -145,7 +144,7 @@ Specifikace ve formě _user stories_ se tedy nesnaží dopředu vystihnout poža
 
 Mnohem důležitější je, že takový přístup brání zmíněné „efektivní a důležité zpětné vazbě“, která vzniká, jakmile může uživatel reálně pracovat s funkční aplikací. Teprve tehdy dochází i technicky zběhlým uživatelům nebo analytikům, co je logický další krok ke kýžené funkci — nebo o _jakou_ funkci se vlastně jedná. A hlavním smyslem vývoje je právě: dodat software, který je _užitečný_, který plní požadovné funkce, nikoliv imaginární zadání.
 
-Tradiční specifikace kromě problému s nepostihnutelností celku systému trpí mnoha dalšími neduhy. Jedním z nich je problém týkající se _komunikace_. Tradiční, vysoce formalizovaná specifikace zpravidla není srozumitelná běžnému uživateli systému či zákazníkovi — a leckdy ani samotným vývojářům. Díky snaze postihnout vyčerpávajícím způsobem celek je většinou rozsáhlá (desítky či stovky stran) a nelze ji využít pro běžnou komunikaci o rozsahu a funkcionalitě projektu.
+Tradiční specifikace kromě problému s nepostihnutelností celku systému trpí mnoha dalšími neduhy. Jedním z nich je problém týkající se _komunikace_. Tradiční, vysoce formalizovaná specifikace zpravidla není srozumitelná běžnému uživateli systému či zákazníkovi — a leckdy ani samotným vývojářům. Díky snaze postihnout vyčerpávajícím způsobem celek je většinou rozsáhlá (desítky či stovky stran) a nelze ji využít pro běžnou komunikaci o rozsahu a funkcionalitě projektu. Navozuje však fatální iluzi, že všichni na projektu zainteresovaní problémům rozumí — vždyť jsou přece popsány ve specifikaci.
 
 To lze nejlépe osvětlit na příkladu. Uvažujme imaginární systém pro evidenci knih a jejich výpůjček. Je zjevné, že ústřední funkcionalita se vyjma vkládání záznamů o knihách do systému, jejich vyhledávání, apod. bude týkat půjčování knih. Ve formě _user story_ bychom tuto funkcionalitu mohli popsat takto a _jenom_ takto:
 
@@ -163,7 +162,7 @@ Místo doplňování původního scénáře do monolitické formy pak na základ
 
     Při zapůjčení knihy se zaznamená datum vypůjčky.
 
-Výhodou je, že funkcionalita je rozdělena do nezávislých a elementárních celků, které lze velmi snadno pochopit a konverzovat o nich. Lze si představit, že v jednom vývojovém cyklu implementujeme jen _první_ scénář s tím, že nebudeme ověřovat ani platnost průkazu, ani určovat délku výpůjční doby. Pouze uložíme záznam o transakci „tento čtenář si vypůjčil tuto knihu“. V dalších vývojových cyklech pak můžeme funkcionalitu rozšiřovat dle doplněných scénářů.
+Výhodou je, že funkcionalita je rozdělena do nezávislých a elementárních celků, které lze velmi snadno pochopit a konverzovat o nich. Lze si představit, že v jednom vývojovém cyklu implementujeme jen _první_ scénář s tím, že nebudeme ověřovat ani platnost průkazu, ani určovat délku výpůjční doby. Uložíme zkrátka záznam o transakci „tento čtenář si vypůjčil tuto knihu“, a v dalších vývojových cyklech můžeme funkcionalitu rozšiřovat dle dodatečně doplněných scénářů.
 
 Důraz je přitom kladen na to, aby scénář vždy popisoval _ucelenou_, byť i _neúplnou_ funkcionalitu systému, a sloužil jako vodítko konverzace. Díky „zpětné vazbě“ dané použitím aplikace či systému pak můžeme postupovat ke scénářům dalším.
 
@@ -200,7 +199,7 @@ Z ukázky však vidíme především to, že se _use case_ snaží postihnout v�
 
 Vzhledem k tomu pak bude _odhadování času_ potřebného na implementaci, druhá klíčová funkce _user stories_, pro jejíž popis nemáme v tomto textu prostor, mnohem přesnější, neboť pracuje s menšími jednotkami funkcionality — a tedy času. Každý scénář dostane určitý počet „bodů“, který se určuje kolektivně a slouží k plánování jednotlivých „iterací“ (viz Cohn, 2004, s. 88; srov. též _Planning Poker_).
 
-Jeden důležitý rozdíl _user stories_ oproti jiným, formalizovanějším způsobům zápisu specifikace z příkladu zjevný není: totiž to, že jsou vždy vypracovávány společně s uživatelem, nikoliv v izolaci. To vede k tomu, že jsou psány srozumitelným jazykem, prostým technického žargonu; jestliže zápisu rozumí uživatel, bude mu rozumět i programátor — naopak to platit nemusí. Za správnost a užitečnost každé _user story_ je pak zodpovědný nejen analytik či projektový manažer, ale též uživatel a zákazník.
+Jeden důležitý rozdíl _user stories_ oproti jiným, formalizovanějším způsobům zápisu specifikace z příkladu zjevný není: totiž to, že jsou vždy vypracovávány společně s uživatelem, nikoliv v izolaci. To vede k tomu, že jsou psány srozumitelným jazykem, prostým technického žargonu; jestliže zápisu rozumí uživatel, bude mu rozumět i programátor — naopak zpravidla neplatí. Za správnost a užitečnost každé _user story_ je pak zodpovědný nejen analytik či projektový manažer, ale též uživatel a zákazník.
 
 
 ### Akceptační kritéria ###
@@ -215,11 +214,11 @@ V případě našeho knihovního systému jsou takovými kritérii pro scénář
 
 Akceptační kritéria nebo též _akceptační testy_ jsou _součástí_ scénáře, neboť jej zpřesňují a doplňují. Samotné ověření, zda je výsledná aplikace nebo systém splňuje, je možné provádět _manuálně_ (přímo v rozhraní aplikace, zapojením systému do testovacího prostředí, apod). To je však pomalé, únavné a náchylné k chybám: člověk pověřený testováním musí procházet akceptační kritéria jedno po druhém a zjištovat, zda jimi software úspěšně prochází.
 
-Závažným důsledkem nepohodlí a neefektivity manuálního testování je to, že akceptační testy jsou pak prováděny zřídka, pouze v určitých fázích vývoje.
+Závažným důsledkem nepohodlí a neefektivity jakéhokoliv manuálního testování je to, že je prováděno zřídka, pouze v určitých fázích vývoje, a zpravidla jen pro omezený okruh funkcionality.
 
-Postupem času proto vznikly nástroje, které umožňují spuštění testů _automatizovat_, tedy provádět mechanicky. Mezi první takové nástroje lze považovat FIT (viz FIT) a FitNesse (viz Fitnesse); oba pracují na principu definice testovacích dat ve zvláštním dokumentu, který pak načte a zpracuje výkonný program, a předá je jako parametry testovanému programu.
+Postupem času proto vznikly nástroje, které umožňují spuštění akceptačních testů _automatizovat_, tedy provádět mechanicky. Mezi první takové nástroje lze považovat FIT (viz FIT) a FitNesse (viz Fitnesse); oba pracují na principu definice testovacích dat ve zvláštním dokumentu, který pak načte a zpracuje výkonný program, a předá je jako parametry testovanému programu.
 
-Hlavním přínosem mechanizace akceptačních testů však není pouhé zlepšení efektivity provádění testů. Je jím především možnost využít akceptační testy podobně jako automatizované jednotkové testy (angl. _unit test_) během samotného vývoje software, nikoliv až nakonec jako ověřené naprogramované funkcionality. Jednotkové testy jsou standardním nástrojem vývojářů pro ověření funkce konkrétního algoritmu či součásti programu a mají tyto výhody:
+Hlavním přínosem mechanizace akceptačních testů však není pouhé zlepšení efektivity provádění testů. Je jím především možnost využít akceptační testy podobně jako automatizované jednotkové testy (angl. _unit test_) během samotného vývoje software, nikoliv až nakonec jako ověření naprogramované funkcionality. Jednotkové testy jsou standardním nástrojem vývojářů pro kontrolu funkce konkrétního algoritmu či součásti programu a mají tyto výhody:
 
 1. Spouští se automaticky, mechanicky ověřují předpoklad a výsledek
 2. Běží velmi rychle, neboť omezují a nahrazují závislost jednotlivých součástí programu navzájem, připojení k databázi, webovým službám apod.
@@ -228,9 +227,9 @@ Hlavním přínosem mechanizace akceptačních testů však není pouhé zlepše
 
 Klíčové je přitom právě to, že jednotkové testy jsou využívány jako nástroj a pomocník v samotné fázi vývoje, nikoliv ve „fázi testování“. Oproti běžné představě, že kód vývojář nejprve napíše a pak jej otestuje, se v současné době využívá technika tzv. vývoje řízeného testy (angl. _test driven development_). Vývojář nejprve napíše _selhávající test_, který specifikuje očekáváné chování části programu, a pak doplní jeho implementaci: tento cyklus se nazývá „červená — zelená — upravit a doplnit“ (angl. _red—green—refactor_; viz Beck, 2003). V tomto smyslu jsou testy nejenom prostým ověřením funkcionality programu, ale pomocníkem jeho správného _návrhu_, neboť eliminují živelné psaní kódu a pomáhají udržet soustředění na podstatné funkce a správnou architekturu a kompozici kódu. Automatizované vývojářské testy slouží rovněž jako ta nejpřesnější _dokumentace_, neboť kód nelže: buď testy prochází, či neprochází. Nenastane pak ten nejzhoubnější problém s dokumentací — to, že se stane neaktuální a falešnou. A konečně, testy jsou nejefektivnější _obranou_ vývojáře proti zavlečení chyb do některé části programu změnou jeho jiné části, při přidávání nových funkcí či při refaktorizaci kódu (viz Krzywda, 2008).
 
-V tradiční metodice a pojetí akceptační testování probíhá jako samostatná fáze, ve smyslu „nejprve software napíšeme a pak jej otestujeme“ — vzhledem k tomu je však vzdálenost mezi implementací funkcionality a jejím ověření příliš velká, a není proto divu, že agilní metodiky přišly s nástroji jako zmíněné FIT nebo FitNesse, které umožňují automatizované akceptační testy zapojit do samotného procesu vývoje a zkrátit tak zpětnou vazbu mezi testováním a implementací.
+V tradiční metodice a pojetí akceptační testování probíhá jako samostatná fáze, ve smyslu „nejprve software napíšeme a pak jej otestujeme“ — vzhledem k tomu je však vzdálenost mezi implementací funkcionality a jejím ověřením příliš velká, a není proto divu, že agilní metodiky přišly s nástroji jako zmíněné FIT nebo FitNesse, které umožňují automatizované akceptační testy zapojit do samotného procesu vývoje a zkrátit tak zpětnou vazbu mezi testováním a implementací.
 
-Akceptační testy přitom na rozdíl od jednotkových testů používaných vývojáři ověřují funkcionalitu _celého systému_ z pohledu uživatele, nikoliv jednotlivé moduly odděleně. Proto se jim též říká _black-box testing_ (nezajímá nás „vnitřek“ systému, tedy konkrétní implementace), na rozdíl od _white-box testing_ jednotkových či jednodušších funkčních testů.
+Akceptační testy přitom na rozdíl od jednotkových testů používaných vývojáři testují funkcionalitu _celého systému_ z pohledu uživatele, nikoliv jednotlivé moduly odděleně. Proto se jim též říká _black-box testing_ (nezajímá nás „vnitřek“ systému, tedy konkrétní implementace), na rozdíl od _white-box testing_ jednotkových či jednodušších funkčních testů.
 
 ### _Cucumber_ ###
 
@@ -274,7 +273,7 @@ Jak jsme uvedli, _Cucumber_ však není pouhým _nástrojem_ pro mechanické spo
 
 Formátem _kdo_ dělá _co_ za jakým _účelem_ se popis scénáře brání zavlečení nepotřebné funkcionality, protože vyžaduje specifikovat účel či hodnotu určité funkce pro uživatele.
 
-Formát _pokud—když—pak_ nutí všechny zainteresované — analytiky, vývojáře i uživatele a zadavatele — v přirozeném jazyce, avšak _zcela přesně_ specifikovat kroky nutné ke splnění scénáře.
+Formát _pokud—když—pak_ nutí všechny zainteresované — analytiky, vývojáře i uživatele a zadavatele — v přirozeném jazyce, avšak _s velkou přesností_ specifikovat kroky nutné ke splnění scénáře.
 
 Tento „jazyk“ (nazvaný _Gherkin_) definuje klíčová slova jako je _Pokud_ (_Given_) v mnoha přirozených jazycích, proto můžeme celý scénář psát v češtině.
 
@@ -317,11 +316,11 @@ S aplikací můžeme pracovat pomocí jednoduchého jazyka: načítat jednotliv�
       fill_in dom_id(book, :borrower_card_id_for), :with => reader.card_id     #borrower_card_id_for_book_1
     end
 
-V databázi tedy vyhledáme čtenářku s jménem "Marie" a knihu od autora "Kafka" s názvem "Proměna" a pomocí deklarace `fill_in` pak vyplníme číslo čtenářského průkazu (`reader.card_id`) do políčka formuláře.
+V databázi tedy vyhledáme čtenářku s jménem "Marie" a knihu od autora "Kafka" s názvem "Proměna" a pomocí deklarace `fill_in` vyplníme číslo čtenářského průkazu (`reader.card_id`) do políčka formuláře.
 
 #### Implementace požadovaného stavu v aplikaci ####
 
-Konečně musíme implementovat požadovaný stav v aplikaci: zajistit, že fungují URL, která využíváme, že na ně v aplikaci reaguje výkonný kód, a tak dále. Jakmile projdou všechny kroky scénáře, můžeme jej považovat za úspěšně implementovaný.
+Konečně musíme implementovat požadovaný stav v aplikaci: zajistit, že fungují URL, která využíváme, že na ně v aplikaci reaguje výkonný kód, a tak dále. Jakmile projdou všechny kroky scénáře, můžeme jej považovat za úspěšně implementovaný. Přehled změn pro celý postup je uveden v [přehledu relevantních revizí](http://github.com/karmi/colibriary/compare/2dd9b3d0bad91bba970b17f5278f8b96c0e27984...626360e41580ddddcda8d524bcc01aa9b923ffee).
 
 ## Rychlost a vývoj software ##
 
@@ -333,7 +332,7 @@ Podle výsledků publikovaných organizací _Standish Group_ softwarové projekt
 
 ![Chaosreport Chart Cost Overrun](/karmi/colibriary/raw/master/doc/text/chaosreport-chart-cost-overrun.png)
 
-Autoři zprávy v citovaném článku dávají tento pozitivní trend do souvislosti s příchodem internetu (InfoQ, 2006): ústupem tradiční architektury aplikací a orientací na webové aplikace. Ty poskytují oproti tradičním desktopovým aplikacím mnoho výhod: možnost rychlejší aktualizace jejich zdrojového kódu, aktualizace „za běhu“ bez nutnosti stahovat opravné balíčky na klientské stanice, rychlejší a snazší implementaci uživatelského rozhraní v HTML, CSS a JavaScriptu, a další. Všimněme si, že většina popisovaných výhod se točí okolo jednoho konceptu: konceptu _rychlosti_.
+Autoři zprávy v citovaném článku dávají tento pozitivní trend do souvislosti s příchodem internetu (InfoQ, 2006): ústupem od tradiční architektury aplikací a orientací na webové aplikace. Ty poskytují oproti tradičním desktopovým aplikacím mnoho výhod: možnost rychlejší aktualizace jejich zdrojového kódu, aktualizace „za běhu“ bez nutnosti stahovat opravné balíčky na klientské stanice, rychlejší a snazší implementaci uživatelského rozhraní v HTML, CSS a JavaScriptu, a další. Všimněme si, že většina popisovaných výhod se točí okolo jednoho konceptu: konceptu _rychlosti_.
 
 Aldous Huxley o rychlosti poznamenal, že je „drogou“, že „rychlost ... poskytuje to pravé moderní potěšení“ (Huxley, 2000, s. 263). Zdá se, že v moderním softwarovém vývoji platí tento aforismus dvojnásob. Nejenom, že se neustále zvyšuje „rychlost“ počítačů — fakt známý jako Mooreův zákon —, zvyšují se i očekávání a požadavky uživatelů, přicházejí nové technologie, které slibují „rychlejší“ vývoj, implementaci složitých funkcí v „krátkém čase“, ...
 
@@ -341,7 +340,7 @@ Tep procesu softwarového vývoje se zrychluje. Moderní webové aplikace nasazu
 
 Tento vývoj začíná zejména v oblasti vývoje pro web stírat tradiční rozdíl mezi „prototypem“, který slouží ke zkusmé implementaci funkcionality a koncovým software. Vžil se pro něj termín „nekonečný prototyp“ (angl. _perpetual beta_) a v tomto „nekonečně nehotovém“ stavu jsou vyvíjeny ty nejvytíženější, komplexní součásti současného internetu, jako např. Google Mail (GMail). Ještě pět let po jeho spuštění, v roce 2009, produktový manažer Gmailu Todd Jackson nálepku „prototypu“ obhajoval těmito slovy (Jackson, 2009, zvýr. KM):
 
-> (...) změnilo by se doopravdy něco, kdybychom se této nálepky vzdali? Stejně bychom nasazovali do produkce funkce 
+> (...) změnilo by se doopravdy něco, kdybychom se této nálepky vzdali? Stejně bychom nasazovali nové funkce do produkce 
 > stejně rychle jako nyní, a _doufejme i rychleji_.
 
 V tomto smyslu pak „fáze“ softwarového vývoje v jejich tradičním či naivním pojetí mizejí. Navzájem splývá a prolíná se nejen prototypování se „skutečným vývojem“, ale též vývoj s testováním, testování se specifikací a specifikace se získáváním požadavků. Takové pojetí softwarového vývoje může připomínat více uměleckou tvorbu než onu tradiční inženýrskou práci, „stavění mostů“. Je-li však hlavním cílem agilních metodik vytvářet software, který je skutečně užitečný, nikoliv takový, který „splňuje zadání“, platí možná pro práci programátora podobná paradoxní maxima, kterou Jan Balabán vyslovil o úkolu spisovatele: „být přesný, nelhat a nevymýšlet si“ (Balabán, 2005).
