@@ -265,6 +265,10 @@ Interpret scénáře pak postupně vykonává všechny uvedené kroky (např. za
 
 ![Colibriary Features Passing](/karmi/colibriary/raw/master/doc/text/colibriary-features-passing.png)
 
+V reálné aplikaci uvedený scénář vypadá takto:
+
+![Colibriary Features Passing](/karmi/colibriary/raw/master/doc/text/colibriary_screenshot_borrowed.png)
+
 Jak jsme uvedli, _Cucumber_ však není pouhým _nástrojem_ pro mechanické spouštění akceptačních testů, ale rovněž _metodologií_. Z uvedeného zápisu vidíme, že struktura celého scénáře má několik důležitých aspektů:
 
 1. „Požadavek“ (angl. _feature_), tedy název scénáře je velmi stručný a slouží ke konverzaci
