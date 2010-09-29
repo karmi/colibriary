@@ -14,7 +14,7 @@ describe BooksController do
 
     it "makes the book borrowed" do
       Book.should_receive(:find).with("37") { mock_book }
-      mock_book.should_receive(:update_attributes).with( { :borrowed_to => @reader.id } )
+      mock_book.should_receive(:borrow_to).with( @reader.id )
       post :borrow, :id => "37", :borrower_card_id => @reader.card_id
       assigns(:book).should be_borrowed
     end
