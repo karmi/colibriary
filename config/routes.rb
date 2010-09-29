@@ -1,4 +1,4 @@
-Colibriary::Application.routes.draw do |map|
+Colibriary::Application.routes.draw do
 
   resources :books do
     member do
