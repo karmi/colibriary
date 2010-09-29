@@ -1,1 +1,1 @@
-World(ActionView::Helpers::RecordIdentificationHelper)
+World(ActionController::RecordIdentifier)
